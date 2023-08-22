@@ -101,6 +101,7 @@ const ImageListItem = React.forwardRef(function ImageListItem(inProps, ref) {
         gridColumnEnd: variant !== 'masonry' ? `span ${cols}` : undefined,
         gridRowEnd: variant !== 'masonry' ? `span ${rows}` : undefined,
         marginBottom: variant === 'masonry' ? gap : undefined,
+        display: variant === 'masonry' ? 'inline-block' : undefined,
         ...style,
       }}
       ownerState={ownerState}
